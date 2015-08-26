@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CF554AC1B8E742700910C82 /* THDiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF554AB1B8E742700910C82 /* THDiaryEntry.m */; };
 		B359295818CE26900078F97D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B359295718CE26900078F97D /* Foundation.framework */; };
 		B359295A18CE26900078F97D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B359295918CE26900078F97D /* CoreGraphics.framework */; };
 		B359295C18CE26900078F97D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B359295B18CE26900078F97D /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CF554AA1B8E742700910C82 /* THDiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDiaryEntry.h; sourceTree = "<group>"; };
+		3CF554AB1B8E742700910C82 /* THDiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDiaryEntry.m; sourceTree = "<group>"; };
 		B359295418CE26900078F97D /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B359295718CE26900078F97D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B359295918CE26900078F97D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +90,8 @@
 		B359294B18CE26900078F97D = {
 			isa = PBXGroup;
 			children = (
+				3CF554AA1B8E742700910C82 /* THDiaryEntry.h */,
+				3CF554AB1B8E742700910C82 /* THDiaryEntry.m */,
 				B359295F18CE26900078F97D /* Diary */,
 				B359297C18CE26900078F97D /* DiaryTests */,
 				B359295618CE26900078F97D /* Frameworks */,
@@ -258,6 +263,7 @@
 				B359298E18CE2A660078F97D /* THCoreDataStack.m in Sources */,
 				B359296A18CE26900078F97D /* THAppDelegate.m in Sources */,
 				B359296618CE26900078F97D /* main.m in Sources */,
+				3CF554AC1B8E742700910C82 /* THDiaryEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
