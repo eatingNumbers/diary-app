@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface THNewEntryViewController : UIViewController
+@class THDiaryEntry;
+
+@interface THEntryViewController : UIViewController
+
+@property (nonatomic, strong) THDiaryEntry *entry;
 
 @end

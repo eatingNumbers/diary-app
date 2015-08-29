@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Treehouse. All rights reserved.
 //
 
-#import "THNewEntryViewController.h"
+#import "THEntryViewController.h"
 #import "THDiaryEntry.h"
 #import "THCoreDataStack.h"
 
-@interface THNewEntryViewController ()
+@interface THEntryViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
-@implementation THNewEntryViewController
+@implementation THEntryViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +30,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    if (self.entry != nil) {
+        self.textField.text = self.entry.body;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,8 +53,20 @@
     [coreDataStack saveContext];
 }
 
+- (void)updateDiaryEntry {
+    self.entry.body = self.textField.text;
+    THCoreDataStack *coreDataStack = [THCoreDataStack defaultStack];
+    [coreDataStack saveContext];
+}
+
+
 - (IBAction)doneWasPressed:(id)sender {
-    [self insertDiaryEntry];
+    if (self.entry != nil) {
+        [self updateDiaryEntry];
+    } else {
+        [self insertDiaryEntry];
+    }
+    
     [self dismissSelf];
 }
 

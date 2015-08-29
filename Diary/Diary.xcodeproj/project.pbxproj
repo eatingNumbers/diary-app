@@ -26,7 +26,7 @@
 		B359298E18CE2A660078F97D /* THCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B359298D18CE2A660078F97D /* THCoreDataStack.m */; };
 		B359299418CE4C810078F97D /* THDiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B359299318CE4C810078F97D /* THDiaryEntry.m */; };
 		B359299618CE4DEF0078F97D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B359299518CE4DEF0078F97D /* MainStoryboard.storyboard */; };
-		B359299918CE4FC20078F97D /* THNewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B359299818CE4FC20078F97D /* THNewEntryViewController.m */; };
+		B359299918CE4FC20078F97D /* THEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B359299818CE4FC20078F97D /* THEntryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,8 @@
 		B359299218CE4C810078F97D /* THDiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDiaryEntry.h; sourceTree = "<group>"; };
 		B359299318CE4C810078F97D /* THDiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDiaryEntry.m; sourceTree = "<group>"; };
 		B359299518CE4DEF0078F97D /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B359299718CE4FC20078F97D /* THNewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNewEntryViewController.h; sourceTree = "<group>"; };
-		B359299818CE4FC20078F97D /* THNewEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THNewEntryViewController.m; sourceTree = "<group>"; };
+		B359299718CE4FC20078F97D /* THEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THEntryViewController.h; sourceTree = "<group>"; };
+		B359299818CE4FC20078F97D /* THEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THEntryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +140,8 @@
 				B359299218CE4C810078F97D /* THDiaryEntry.h */,
 				B359299318CE4C810078F97D /* THDiaryEntry.m */,
 				B359299518CE4DEF0078F97D /* MainStoryboard.storyboard */,
-				B359299718CE4FC20078F97D /* THNewEntryViewController.h */,
-				B359299818CE4FC20078F97D /* THNewEntryViewController.m */,
+				B359299718CE4FC20078F97D /* THEntryViewController.h */,
+				B359299818CE4FC20078F97D /* THEntryViewController.m */,
 				B359296018CE26900078F97D /* Supporting Files */,
 			);
 			path = Diary;
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B359299918CE4FC20078F97D /* THNewEntryViewController.m in Sources */,
+				B359299918CE4FC20078F97D /* THEntryViewController.m in Sources */,
 				3CF13E091B90EB5400D11F89 /* THEntryListViewControllerTableViewController.m in Sources */,
 				B359296D18CE26900078F97D /* Diary.xcdatamodeld in Sources */,
 				B359298E18CE2A660078F97D /* THCoreDataStack.m in Sources */,
