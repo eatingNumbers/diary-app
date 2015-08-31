@@ -10,6 +10,7 @@
 #import "THCoreDataStack.h"
 #import "THDiaryEntry.h"
 #import "THEntryViewController.h"
+#import "THEntryCell.h"
 
 @interface THEntryListViewControllerTableViewController () <NSFetchedResultsControllerDelegate>
 
@@ -89,12 +90,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    THEntryCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     THDiaryEntry *entry = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = entry.body;
+    [cell configureCellForEntry:entry];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    THDiaryEntry *entry = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    return [THEntryCell heightForEntry:entry];
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
