@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C94488C1B97902700DA6E37 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C94488B1B97902700DA6E37 /* QuartzCore.framework */; };
+		3C94488E1B97922A00DA6E37 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C94488D1B97922A00DA6E37 /* CoreLocation.framework */; };
 		3CC00C161B94A7E700133572 /* THNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC00C151B94A7E700133572 /* THNavigationController.m */; };
 		3CC00C191B94F2BE00133572 /* THEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC00C181B94F2BE00133572 /* THEntryCell.m */; };
 		3CF13E091B90EB5400D11F89 /* THEntryListViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF13E081B90EB5400D11F89 /* THEntryListViewControllerTableViewController.m */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C94488B1B97902700DA6E37 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3C94488D1B97922A00DA6E37 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3CC00C141B94A7E700133572 /* THNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNavigationController.h; sourceTree = "<group>"; };
 		3CC00C151B94A7E700133572 /* THNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THNavigationController.m; sourceTree = "<group>"; };
 		3CC00C171B94F2BE00133572 /* THEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THEntryCell.h; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C94488E1B97922A00DA6E37 /* CoreLocation.framework in Frameworks */,
+				3C94488C1B97902700DA6E37 /* QuartzCore.framework in Frameworks */,
 				B359295A18CE26900078F97D /* CoreGraphics.framework in Frameworks */,
 				B359295E18CE26900078F97D /* CoreData.framework in Frameworks */,
 				B359295C18CE26900078F97D /* UIKit.framework in Frameworks */,
@@ -123,6 +129,8 @@
 		B359295618CE26900078F97D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C94488D1B97922A00DA6E37 /* CoreLocation.framework */,
+				3C94488B1B97902700DA6E37 /* QuartzCore.framework */,
 				B359295718CE26900078F97D /* Foundation.framework */,
 				B359295918CE26900078F97D /* CoreGraphics.framework */,
 				B359295B18CE26900078F97D /* UIKit.framework */,

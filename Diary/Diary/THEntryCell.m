@@ -8,6 +8,7 @@
 
 #import "THEntryCell.h"
 #import "THDiaryEntry.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface THEntryCell ()
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
@@ -36,7 +37,7 @@
     self.locationLabel.text = entry.location;
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"EEEE, MMMMM d yyyy"];
+    [dateFormatter setDateFormat:@"EEEE, MMMM d yyyy"];
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:entry.date];
     
     self.dateLabel.text = [dateFormatter stringFromDate:date];
@@ -53,6 +54,12 @@
         self.moodImageView.image = [UIImage imageNamed:@"icn_average"];
     } else if (entry.mood == THDiaryEntryMoodBad) {
         self.moodImageView.image = [UIImage imageNamed:@"icon_bad"];
+    }
+    self.mainImageView.layer.cornerRadius = CGRectGetWidth(self.mainImageView.frame) / 2.0f;
+    if (entry.location.length > 0) {
+        self.locationLabel.text = entry.location;
+    } else {
+        self.locationLabel.text = @"No location";
     }
 }
 
